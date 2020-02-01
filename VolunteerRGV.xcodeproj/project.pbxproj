@@ -49,6 +49,7 @@
 		9F5FB34923E149B6008F232D /* VolunteerRGVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolunteerRGVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5FB34D23E149B6008F232D /* VolunteerRGVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerRGVUITests.swift; sourceTree = "<group>"; };
 		9F5FB34F23E149B6008F232D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4BF02B23E606B7007300C1 /* VolunteerRGV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VolunteerRGV.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		9F5FB32A23E149B2008F232D /* VolunteerRGV */ = {
 			isa = PBXGroup;
 			children = (
+				BF4BF02B23E606B7007300C1 /* VolunteerRGV.entitlements */,
 				9F5FB32B23E149B2008F232D /* AppDelegate.swift */,
 				9F5FB32D23E149B2008F232D /* SceneDelegate.swift */,
 				9F5FB32F23E149B2008F232D /* ViewController.swift */,
@@ -434,9 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VolunteerRGV/VolunteerRGV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2A3A8JD57C;
+				DEVELOPMENT_TEAM = B2W4986825;
 				INFOPLIST_FILE = VolunteerRGV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +456,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VolunteerRGV/VolunteerRGV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2A3A8JD57C;
+				DEVELOPMENT_TEAM = B2W4986825;
 				INFOPLIST_FILE = VolunteerRGV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
