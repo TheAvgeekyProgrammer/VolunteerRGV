@@ -427,7 +427,103 @@
                     <view key="view" contentMode="scaleToFill" id="3Vm-u9-Zbv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rr2-5c-Au7">
+                                <rect key="frame" x="25" y="190.33333333333334" width="325" height="431.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXV-ng-oEn">
+                                        <rect key="frame" x="102" y="0.0" width="121" height="21.666666666666668"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qXV-ng-oEn" secondAttribute="height" multiplier="39:7" id="7dN-wi-6fM"/>
+                                            <constraint firstAttribute="height" constant="21.670000000000002" id="sO7-4A-BPm"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Volunteer">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="RGV">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your organization's name?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzg-I6-eXC">
+                                        <rect key="frame" x="0.0" y="51.666666666666657" width="325" height="122"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u1s-H9-tjM">
+                                        <rect key="frame" x="0.0" y="203.66666666666666" width="325" height="81.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for your organization." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICT-6Q-8DT">
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <searchBar contentMode="redraw" searchBarStyle="minimal" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYM-9B-6ej">
+                                                <rect key="frame" x="0.0" y="25.333333333333314" width="325" height="56"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search" textContentType="organization"/>
+                                            </searchBar>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tYM-9B-6ej" secondAttribute="trailing" id="1gq-W3-eYR"/>
+                                            <constraint firstAttribute="trailing" secondItem="ICT-6Q-8DT" secondAttribute="trailing" id="LhH-ZV-070"/>
+                                            <constraint firstItem="tYM-9B-6ej" firstAttribute="leading" secondItem="u1s-H9-tjM" secondAttribute="leading" id="Mnz-fp-hdW"/>
+                                            <constraint firstItem="ICT-6Q-8DT" firstAttribute="leading" secondItem="u1s-H9-tjM" secondAttribute="leading" id="kQ7-R3-UYU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Emk-GZ-Fua">
+                                        <rect key="frame" x="48.000000000000014" y="315" width="229.33333333333337" height="53.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can't find your organization?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdF-sD-J3W">
+                                                <rect key="frame" x="0.0" y="0.0" width="229.33333333333334" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrH-IZ-FwF">
+                                                <rect key="frame" x="51" y="20.333333333333314" width="127" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <state key="normal" title="Register it here."/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCf-Le-TBW">
+                                        <rect key="frame" x="143.66666666666666" y="398.33333333333326" width="38" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Next"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="u1s-H9-tjM" firstAttribute="leading" secondItem="rr2-5c-Au7" secondAttribute="leading" id="9mx-QG-Oga"/>
+                                    <constraint firstItem="kzg-I6-eXC" firstAttribute="leading" secondItem="rr2-5c-Au7" secondAttribute="leading" id="Gvr-tj-S52"/>
+                                    <constraint firstAttribute="trailing" secondItem="kzg-I6-eXC" secondAttribute="trailing" id="q5w-E9-ZR6"/>
+                                    <constraint firstAttribute="trailing" secondItem="u1s-H9-tjM" secondAttribute="trailing" id="xCz-c5-UdI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rr2-5c-Au7" secondAttribute="trailing" constant="25" id="Osn-oc-FLe"/>
+                            <constraint firstItem="rr2-5c-Au7" firstAttribute="centerY" secondItem="3Vm-u9-Zbv" secondAttribute="centerY" id="d3c-5o-Fdg"/>
+                            <constraint firstItem="rr2-5c-Au7" firstAttribute="leading" secondItem="dwU-96-fup" secondAttribute="leading" constant="25" id="uEF-7Y-Ldl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dwU-96-fup"/>
                     </view>
                     <navigationItem key="navigationItem" id="FSx-kc-tw4"/>
