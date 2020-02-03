@@ -396,6 +396,9 @@
                                         <rect key="frame" x="0.0" y="503" width="325" height="33"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="mOs-qH-QIo" kind="show" id="cXO-PC-i7O"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -508,6 +511,9 @@
                                         <rect key="frame" x="143.66666666666666" y="398.33333333333326" width="38" height="33"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <state key="normal" title="Next"/>
+                                        <connections>
+                                            <segue destination="mOs-qH-QIo" kind="show" id="5vn-XB-BpR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -539,13 +545,78 @@
                     <view key="view" contentMode="scaleToFill" id="HfC-y9-dek">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="H1o-AN-Jgo">
+                                <rect key="frame" x="25" y="299.33333333333331" width="325" height="213.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhC-ho-jA5">
+                                        <rect key="frame" x="102" y="0.0" width="121" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lhC-ho-jA5" secondAttribute="height" multiplier="39:7" id="7wY-b4-TqI"/>
+                                            <constraint firstAttribute="height" constant="21.670000000000002" id="G4U-Ra-ixe"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Volunteer">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="RGV">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to VolunteerRGV!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJn-Ge-8uY">
+                                        <rect key="frame" x="0.0" y="51.999999999999993" width="325" height="81.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tz-do-mwt">
+                                        <rect key="frame" x="0.0" y="163.33333333333337" width="325" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OqI-Fb-FeG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Start Volunteering">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hJn-Ge-8uY" firstAttribute="leading" secondItem="H1o-AN-Jgo" secondAttribute="leading" id="Ejh-D3-qQh"/>
+                                    <constraint firstItem="7tz-do-mwt" firstAttribute="leading" secondItem="H1o-AN-Jgo" secondAttribute="leading" id="JcT-IW-d9Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJn-Ge-8uY" secondAttribute="trailing" id="fAM-0t-xj2"/>
+                                    <constraint firstAttribute="trailing" secondItem="7tz-do-mwt" secondAttribute="trailing" id="qcg-8f-9UI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H1o-AN-Jgo" firstAttribute="leading" secondItem="QGi-5w-x2T" secondAttribute="leading" constant="25" id="9X3-U4-NPd"/>
+                            <constraint firstAttribute="trailing" secondItem="H1o-AN-Jgo" secondAttribute="trailing" constant="25" id="DWe-Mj-HeD"/>
+                            <constraint firstItem="H1o-AN-Jgo" firstAttribute="centerY" secondItem="HfC-y9-dek" secondAttribute="centerY" id="X0r-ig-SIE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QGi-5w-x2T"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YFJ-gC-Fv9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cys-Sv-zDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3692" y="134"/>
+            <point key="canvasLocation" x="3660" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kjX-bO-b2d">
@@ -566,4 +637,7 @@
             <point key="canvasLocation" x="264.80000000000001" y="136.69950738916256"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5vn-XB-BpR"/>
+    </inferredMetricsTieBreakers>
 </document>
