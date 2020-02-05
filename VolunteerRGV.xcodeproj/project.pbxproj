@@ -447,17 +447,16 @@
 		9F5FB35323E149B6008F232D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VolunteerRGV/VolunteerRGV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B2W4986825;
+				DEVELOPMENT_TEAM = 2A3A8JD57C;
 				INFOPLIST_FILE = VolunteerRGV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sciacadtsa.VolunteerRGV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sciacadtsa.volunteerrgv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -467,17 +466,16 @@
 		9F5FB35423E149B6008F232D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VolunteerRGV/VolunteerRGV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B2W4986825;
+				DEVELOPMENT_TEAM = 2A3A8JD57C;
 				INFOPLIST_FILE = VolunteerRGV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sciacadtsa.VolunteerRGV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sciacadtsa.volunteerrgv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
