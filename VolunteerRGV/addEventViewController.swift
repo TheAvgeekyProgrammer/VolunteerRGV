@@ -7,22 +7,40 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class addEventViewController: UIViewController {
 
-    @IBOutlet weak var descriptionView: UITextField!
+    @IBOutlet weak var textView: UITextView!
+    
+    var ref:DatabaseReference?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        ref = Database.database().reference()
+        
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addEvent(_ sender: Any) {
+    @IBAction func addPost(_ sender: Any) {
+        // Post the data to firebase
+        
+        
+        //  Dispose of any resources that can be created
+        presentingViewController?.dismiss(animated: true, completion: nil)
+        
     }
     
+    
     @IBAction func cancelPost(_ sender: Any) {
+    
+        
+        // Dismiss the popover
+        
+        presentingViewController?.dismiss(animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 

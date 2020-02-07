@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var postData = ["Message 1", "Message 2", "Message 3"]
     
     override func viewDidLoad() {

@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k5g-6A-BMT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="f9b-Qo-xT4">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
@@ -38,19 +38,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FmQ-Us-114"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Home" id="zpB-Bc-1Az">
                         <barButtonItem key="leftBarButtonItem" image="person" catalog="system" id="u5Z-vF-wEl">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3XW-EX-CKi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="Z8O-PJ-kog">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="T9v-ue-Mlg" kind="show" id="NXN-s1-3qd"/>
+                                <segue destination="y0W-nc-7vG" kind="presentation" id="yii-Kr-Fax"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="k5g-6A-BMT" id="CUM-L2-OGh"/>
+                        <outlet property="tableView" destination="k5g-6A-BMT" id="VYa-5u-9gL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Onj-Al-zit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -254,13 +256,13 @@
         <!--Add Opportunity-->
         <scene sceneID="Tgf-x1-1p4">
             <objects>
-                <viewController title="Add Opportunity" id="T9v-ue-Mlg" customClass="addEventViewController" customModule="VolunteerRGV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Add Opportunity" id="T9v-ue-Mlg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H5d-GS-5jT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="e9p-I9-rwf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-PH-fg5">
                                         <rect key="frame" x="25" y="25" width="325" height="520"/>
@@ -406,6 +408,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlT-gI-rN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="584.79999999999995" y="-200.24630541871923"/>
+        </scene>
+        <!--Add Event View Controller-->
+        <scene sceneID="t2G-a8-jhJ">
+            <objects>
+                <viewController id="y0W-nc-7vG" customClass="addEventViewController" customModule="VolunteerRGV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="11y-pi-P1L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuS-C5-tss">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <items>
+                                    <navigationItem title="Add an Event" id="7wQ-li-VSE">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Mtk-wM-tEF">
+                                            <connections>
+                                                <action selector="cancelPost:" destination="y0W-nc-7vG" id="ooK-ax-idz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uXa-Oy-IIM">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="addPost:" destination="y0W-nc-7vG" id="OcY-jc-M2I"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title &amp; Description of Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf8-Y1-3fF">
+                                <rect key="frame" x="16" y="87" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-5V-UNh">
+                                <rect key="frame" x="16" y="108" width="343" height="616"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vuS-C5-tss" firstAttribute="top" secondItem="RcQ-uy-2MR" secondAttribute="top" id="718-oL-FAa"/>
+                            <constraint firstItem="vuS-C5-tss" firstAttribute="trailing" secondItem="RcQ-uy-2MR" secondAttribute="trailing" id="ZY0-nf-UxN"/>
+                            <constraint firstItem="vuS-C5-tss" firstAttribute="leading" secondItem="RcQ-uy-2MR" secondAttribute="leading" id="gCX-xa-cYU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RcQ-uy-2MR"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="VgU-5V-UNh" id="Sxe-fF-4Hi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Cm-6n-fZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2301.5999999999999" y="542.36453201970448"/>
         </scene>
     </scenes>
     <resources>
