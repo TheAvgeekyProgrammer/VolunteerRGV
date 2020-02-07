@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>44286208609-pmo79j5lhbqmppoamc93m4e46960tlui.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.44286208609-pmo79j5lhbqmppoamc93m4e46960tlui</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBbdfpXQv-2IRoYCKo3qvsv1bGBmQmwFpU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>44286208609</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sciacadtsa.volunteerrgv</string>
+	<key>PROJECT_ID</key>
+	<string>volunteerrgv-11246</string>
+	<key>STORAGE_BUCKET</key>
+	<string>volunteerrgv-11246.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:44286208609:ios:5e466b2512736488d05820</string>
+	<key>DATABASE_URL</key>
+	<string>https://volunteerrgv-11246.firebaseio.com</string>
+</dict>
+</plist>

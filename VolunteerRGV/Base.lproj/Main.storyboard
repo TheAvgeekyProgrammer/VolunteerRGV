@@ -10,7 +10,7 @@
         <!--Home-->
         <scene sceneID="Djo-Nz-PM8">
             <objects>
-                <viewController title="Home" id="kuG-pD-W5d" sceneMemberID="viewController">
+                <viewController title="Home" id="kuG-pD-W5d" customClass="ViewController" customModule="VolunteerRGV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ybn-Vf-PZn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,10 +18,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k5g-6A-BMT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="a9p-dy-a8t">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="f9b-Qo-xT4">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a9p-dy-a8t" id="a4d-M0-9mK">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f9b-Qo-xT4" id="HYR-2Z-uEA">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -49,6 +49,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="k5g-6A-BMT" id="CUM-L2-OGh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Onj-Al-zit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,7 +254,7 @@
         <!--Add Opportunity-->
         <scene sceneID="Tgf-x1-1p4">
             <objects>
-                <viewController title="Add Opportunity" id="T9v-ue-Mlg" sceneMemberID="viewController">
+                <viewController title="Add Opportunity" id="T9v-ue-Mlg" customClass="addEventViewController" customModule="VolunteerRGV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H5d-GS-5jT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,10 +366,21 @@
                         <viewLayoutGuide key="safeArea" id="lf8-Pg-WAS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Opportunity" id="WFm-Eb-dSa">
+                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="Kxm-pQ-IIP">
+                            <connections>
+                                <action selector="cancelPost:" destination="T9v-ue-Mlg" id="i3q-Xz-oqV"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Post" style="done" id="vd0-9w-aAU">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addEvent:" destination="T9v-ue-Mlg" id="vGj-E7-jGc"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionView" destination="HtK-Ou-AIC" id="ror-dF-pH8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Odf-ik-kAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
