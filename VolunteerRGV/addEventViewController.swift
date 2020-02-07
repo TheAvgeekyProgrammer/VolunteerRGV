@@ -13,21 +13,22 @@ class addEventViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
-    var ref:DatabaseReference?
+    var ref:DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ref = Database.database().reference()
-        
+
         // Do any additional setup after loading the view.
     }
     
     @IBAction func addPost(_ sender: Any) {
         // Post the data to firebase
-        
+        ref?.child("Posts").childByAutoId().setValue(textView.text)
         
         //  Dispose of any resources that can be created
+        // closes out of the window
         presentingViewController?.dismiss(animated: true, completion: nil)
         
     }
@@ -37,7 +38,7 @@ class addEventViewController: UIViewController {
     
         
         // Dismiss the popover
-        
+        // closes out of the window
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
