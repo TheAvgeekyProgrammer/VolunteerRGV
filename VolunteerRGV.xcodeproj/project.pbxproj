@@ -15,6 +15,7 @@
 		9F5FB33823E149B6008F232D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5FB33623E149B6008F232D /* LaunchScreen.storyboard */; };
 		9F5FB34323E149B6008F232D /* VolunteerRGVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FB34223E149B6008F232D /* VolunteerRGVTests.swift */; };
 		9F5FB34E23E149B6008F232D /* VolunteerRGVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FB34D23E149B6008F232D /* VolunteerRGVUITests.swift */; };
+		BFA9033023ED4DC700A212C8 /* InterestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9032F23ED4DC700A212C8 /* InterestButton.swift */; };
 		BFF141FB23E8D6B600B5A28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF141F923E8D6B600B5A28C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		9F5FB34D23E149B6008F232D /* VolunteerRGVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerRGVUITests.swift; sourceTree = "<group>"; };
 		9F5FB34F23E149B6008F232D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF4BF02B23E606B7007300C1 /* VolunteerRGV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VolunteerRGV.entitlements; sourceTree = "<group>"; };
+		BFA9032F23ED4DC700A212C8 /* InterestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestButton.swift; sourceTree = "<group>"; };
 		BFF141FA23E8D6B600B5A28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				9F5FB32D23E149B2008F232D /* SceneDelegate.swift */,
 				9F5FB32F23E149B2008F232D /* ViewController.swift */,
 				9F5FB33123E149B2008F232D /* Setup.storyboard */,
+				BFA9032F23ED4DC700A212C8 /* InterestButton.swift */,
 				BFF141F923E8D6B600B5A28C /* Main.storyboard */,
 				9F5FB33423E149B6008F232D /* Assets.xcassets */,
 				9F5FB33623E149B6008F232D /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5FB33023E149B2008F232D /* ViewController.swift in Sources */,
+				BFA9033023ED4DC700A212C8 /* InterestButton.swift in Sources */,
 				9F5FB32C23E149B2008F232D /* AppDelegate.swift in Sources */,
 				9F5FB32E23E149B2008F232D /* SceneDelegate.swift in Sources */,
 			);

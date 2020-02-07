@@ -166,7 +166,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="204" id="AOR-kn-2eT"/>
                                                 </constraints>
-                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
@@ -322,6 +322,7 @@
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" text="Provide a description and important information about the opportunity (e.g. primary contact information) here." translatesAutoresizingMaskIntoConstraints="NO" id="xF1-9d-NsW">
                                                 <rect key="frame" x="0.0" y="291" width="325" height="204"/>
+                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="204" id="5wL-mb-fai"/>
                                                 </constraints>
@@ -362,9 +363,6 @@
                         <viewLayoutGuide key="safeArea" id="lf8-Pg-WAS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Opportunity" id="WFm-Eb-dSa">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zFT-Cl-GBh">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Post" style="done" id="vd0-9w-aAU">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
